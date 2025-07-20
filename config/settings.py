@@ -132,3 +132,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # accounts config
 AUTH_USER_MODEL = 'accounts.CustomUser'
+# بعد از ورود یا خروج کاربر به سایت ان را به صفحه اصلی سایت ببر
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
