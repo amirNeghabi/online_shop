@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>»ورود</title>
+</head>
+<body>
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Log in</button>
+    </form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE/editor config files
+*.idea/
+*.vscode/
+*.swp
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# dotenv files (secrets)
+.env
+.env.*
+
+# Node modules (if using npm/webpack)
+node_modules/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Docker/Build artifacts
+*.tar
+*.bak
+*.tmp
+
+# Git
+.git
+.gitignore

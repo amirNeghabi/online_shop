@@ -1,1 +1,38 @@
-about page
+<!DOCTYPE html>
+{% extends '_base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title_page %}جزییات{% endblock %}</title>
+{% block content %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the about page</h1>
+        <p>This is a very basic HTML page without Bootstrap.</p>
+
+    </div>
+{% endblock %}
+</body>
+
+</html>
+

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>ثبت نام</title>
 </head>
+{% block content %}
 <body>
 <form method="post">
   {% csrf_token %}
-  {{ form.as_p }}
+  {{ form|crispy }}
   <button type="submit">Sign up</button>
 </form>
-
+{% endblock %}
 </body>
 </html>
