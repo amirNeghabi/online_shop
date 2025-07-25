@@ -9,3 +9,4 @@ requests
 PyJWT>=2.0.0
 google-auth
 asgiref~=3.7.2
+environs
